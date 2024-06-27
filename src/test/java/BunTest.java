@@ -2,13 +2,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.apache.commons.lang3.RandomStringUtils;
 import praktikum.Bun;
 
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class BunPriceTest {
+public class BunTest {
 
     Bun bun;
     private String name;
@@ -16,7 +15,7 @@ public class BunPriceTest {
     private float expectedResultPrice;
     private String expectedResultName;
 
-    public BunPriceTest(String name, float price, float expectedResultPrice, String expectedResultName){
+    public BunTest(String name, float price, float expectedResultPrice, String expectedResultName){
         this.name = name;
         this.price = price;
         this.expectedResultPrice = expectedResultPrice;
@@ -42,7 +41,7 @@ public class BunPriceTest {
     @Test
     public void differentPrice(){
         float actualResult = bun.getPrice();
-        assertEquals(expectedResultPrice, actualResult, 4);
+        assertEquals(expectedResultPrice, actualResult, 0);
     }
 
     @Test

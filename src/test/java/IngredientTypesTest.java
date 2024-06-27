@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static praktikum.IngredientType.FILLING;
 import static praktikum.IngredientType.SAUCE;
 
-public class IngredientTest {
+public class IngredientTypesTest {
 
     @Test
     public void nameTest(){
