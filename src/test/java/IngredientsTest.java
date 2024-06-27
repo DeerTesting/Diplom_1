@@ -39,7 +39,7 @@ public class IngredientsTest {
 
     @Before
     public void setUp(){
-        ingredient = new Ingredient(ingredientType, name, price);;
+        ingredient = new Ingredient(ingredientType, name, price);
     }
     @Test
     public void differentPrice(){
